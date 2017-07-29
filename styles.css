@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    color: gray;
+    backface-visibility: hidden;
+}
+
+nav {
+    background-color: #222222;
+    margin-bottom: 15px !important;
+    max-height: 50px;
+}
+
+.collection-item {
+    height: 130px !important;
+}
+
+.format-label {
+    padding-left: 25px !important;
+    padding-right: 15px !important;
+}
+
+.preloader-wrapper {
+    margin: 0 auto;
+    vertical-align: center !important;
+    z-index: 1;
+}
+
+li {
+    padding-right: 10px !important;
+    line-height: 50px !important;
+}
+
+li a:hover {
+    animation: nav-color 250ms forwards;
+    background: none !important;
+}
+
+#content {
+    top: 30px;
+    text-align: center;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 100%;
+}
+
+.row {
+    margin-bottom: 1px;
+    padding-bottom: 0;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.col {
+    padding: 0 3px !important;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+h5 {
+    letter-spacing: 3px;
+    font-family: Oswald;
+}
+
+form.left {
+    padding-bottom: 10px !important;
+    margin-left: 14px !important;
+    padding-top: 2px !important;
+}
+
+#search {
+    background: white !important;
+    border-radius: 5px !important;
+    vertical-align: middle;
+    width: 350px !important;
+    height: 38px !important;
+    border: none !important;
+    padding-left: 10px !important;
+}
+
+::-webkit-input-placeholder { 
+    color: black;
+  }
+
+i {
+    position: relative;
+    float: right;
+    right: 11%;
+    bottom: 20%;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.circle {
+    height: 100px !important;
+    width: 100px !important;
+}
+
+@keyframes nav-color {
+    from {
+        color: gray;
+    }
+    to {
+        color: purple;
+    }
+}
+
+.row img:not(.circle) {
+    width: 470px !important;
+    height: 350px !important;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay:hover .overlay-content {
+    top: 30% !important;
+}
+
+.overlay {
+    background: rgba(122, 196, 194, 0.8);
+    color: white;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: 470px;
+    height: 350px;
+    transition: opacity 600ms;
+}
+
+.overlay-content {
+    filter: brightness(100) contrast(100);
+    top: 100% !important;
+    position: absolute;
+    width: 100%;
+    transition: top 400ms;
+}
