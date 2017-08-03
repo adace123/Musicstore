@@ -121,7 +121,7 @@ function sendConfirmation() {
         $message .= ucfirst($field).": ".$value."<br>";
     }
     $message.= "<br><br>We appreciate your business!";
-    $mailer = new MailJet("eb0cce38107225c546c0e91ea9a9db35","ead7c4d19cdaece9e9192e3af2468a62");
+    $mailer = new MailJet("#############","################");
     $params = array("method" => "POST","from" => "rexforddrive@gmail.com","to" => $email
     ,"subject" => "Thanks so much for your order! Here are your order details:",
     "html" => $message);
